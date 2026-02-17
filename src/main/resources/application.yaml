@@ -1,5 +1,7 @@
 spring:
   application:
-    name: api-gateway
+    name: gateway-api
   config:
-    import: "optional:configserver:http://localhost:8888/"
+    import: "optional:configserver:http://config-server:8888/"
+server:
+  port: 7070
